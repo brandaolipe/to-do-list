@@ -63,6 +63,7 @@ main {
     width: 100%;
     box-shadow: 0 0 20px #ccc;
     margin-bottom: 2%;
+    cursor: pointer;
 }
 
 .item-icone {
@@ -81,6 +82,15 @@ main {
     flex: 25%;
 }
 
+.item.clicado {
+    background: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
 .delete {
     background: red; 
     color: white;      
@@ -88,4 +98,8 @@ main {
     padding: 10px;
     height: 80px;
     width: 100%;
+}
+
+.mdi-check-circle {
+    color: green;   
 }
